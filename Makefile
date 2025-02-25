@@ -2,9 +2,9 @@
 ####################### Makefile Template ##############################
 ########################################################################
 # Student settings
-NAME = YOURNAME
-SID = YOURSID
-EMAIL = YOURUTAEMAIL
+NAME = Jonathan Camarce
+SID = 1001725288
+EMAIL = jkc5288@mavs.uta.edu
 SEMESTER = SPRING2025
 PROJECT=PROJ03
  

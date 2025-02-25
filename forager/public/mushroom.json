@@ -1,0 +1,947 @@
+[
+  {
+    "image": "/images/mushroom1.jpg",
+    "name": "Lactarius deliciosus",
+    "scientific_name": "Lactarius deliciosus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "13 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Gray",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Lactarius deliciosus.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom2.jpg",
+    "name": "Boletus edulis",
+    "scientific_name": "Boletus edulis",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "8 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Red",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Boletus edulis.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom3.jpg",
+    "name": "Inocybe geophylla",
+    "scientific_name": "Inocybe geophylla",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "16 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Red",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Inocybe geophylla.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom4.jpg",
+    "name": "Hypholoma fasciculare",
+    "scientific_name": "Hypholoma fasciculare",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "27 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Hypholoma fasciculare.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom5.jpg",
+    "name": "Clitocybe dealbata",
+    "scientific_name": "Clitocybe dealbata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "26 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Clitocybe dealbata.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom6.jpg",
+    "name": "Morchella esculenta",
+    "scientific_name": "Morchella esculenta",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "8 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Morchella esculenta.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom7.jpg",
+    "name": "Lactarius deliciosus",
+    "scientific_name": "Lactarius deliciosus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "29 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Pink",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Lactarius deliciosus.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom8.jpg",
+    "name": "Cantharellus cibarius",
+    "scientific_name": "Cantharellus cibarius",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "23 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Cantharellus cibarius.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom9.jpg",
+    "name": "Galerina marginata",
+    "scientific_name": "Galerina marginata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "22 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Galerina marginata.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom10.jpg",
+    "name": "Hypholoma fasciculare",
+    "scientific_name": "Hypholoma fasciculare",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "14 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Hypholoma fasciculare.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom11.jpg",
+    "name": "Pleurotus ostreatus",
+    "scientific_name": "Pleurotus ostreatus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "27 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Gray",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Pleurotus ostreatus.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom12.jpg",
+    "name": "Amanita phalloides",
+    "scientific_name": "Amanita phalloides",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "27 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita phalloides.",
+    "region": "Asia"
+  },
+  {
+    "image": "/images/mushroom13.jpg",
+    "name": "Agaricus bisporus",
+    "scientific_name": "Agaricus bisporus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "27 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Agaricus bisporus.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom14.jpg",
+    "name": "Pleurotus ostreatus",
+    "scientific_name": "Pleurotus ostreatus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "9 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Pleurotus ostreatus.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom16.jpg",
+    "name": "Pleurotus ostreatus",
+    "scientific_name": "Pleurotus ostreatus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "22 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Pleurotus ostreatus.",
+    "region": "Asia"
+  },
+  {
+    "image": "/images/mushroom17.jpg",
+    "name": "Hypholoma fasciculare",
+    "scientific_name": "Hypholoma fasciculare",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "22 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Hypholoma fasciculare.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom18.jpg",
+    "name": "Amanita phalloides",
+    "scientific_name": "Amanita phalloides",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "17 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Gray",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita phalloides.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom19.jpg",
+    "name": "Agaricus bisporus",
+    "scientific_name": "Agaricus bisporus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "12 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Agaricus bisporus.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom20.jpg",
+    "name": "Entoloma sinuatum",
+    "scientific_name": "Entoloma sinuatum",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "16 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Entoloma sinuatum.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom21.jpg",
+    "name": "Entoloma sinuatum",
+    "scientific_name": "Entoloma sinuatum",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "5 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Yellow",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Entoloma sinuatum.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom22.jpg",
+    "name": "Galerina marginata",
+    "scientific_name": "Galerina marginata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "5 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Galerina marginata.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom24.jpg",
+    "name": "Morchella esculenta",
+    "scientific_name": "Morchella esculenta",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "30 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Yellow",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Morchella esculenta.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom25.jpg",
+    "name": "Lactarius deliciosus",
+    "scientific_name": "Lactarius deliciosus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "17 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Lactarius deliciosus.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom26.jpg",
+    "name": "Amanita muscaria",
+    "scientific_name": "Amanita muscaria",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "29 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Yellow",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita muscaria.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom27.jpg",
+    "name": "Agaricus bisporus",
+    "scientific_name": "Agaricus bisporus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "19 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Yellow",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Agaricus bisporus.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom28.jpg",
+    "name": "Clitocybe dealbata",
+    "scientific_name": "Clitocybe dealbata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "16 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Red",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Clitocybe dealbata.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom29.jpg",
+    "name": "Galerina marginata",
+    "scientific_name": "Galerina marginata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "20 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Galerina marginata.",
+    "region": "Asia"
+  },
+  {
+    "image": "/images/mushroom30.jpg",
+    "name": "Russula emetica",
+    "scientific_name": "Russula emetica",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "17 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Russula emetica.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom31.jpg",
+    "name": "Entoloma sinuatum",
+    "scientific_name": "Entoloma sinuatum",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "12 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Red",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Entoloma sinuatum.",
+    "region": "Asia"
+  },
+  {
+    "image": "/images/mushroom32.jpg",
+    "name": "Amanita muscaria",
+    "scientific_name": "Amanita muscaria",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "10 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita muscaria.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom33.jpg",
+    "name": "Amanita phalloides",
+    "scientific_name": "Amanita phalloides",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "29 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita phalloides.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom34.jpg",
+    "name": "Entoloma sinuatum",
+    "scientific_name": "Entoloma sinuatum",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "28 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Yellow",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Entoloma sinuatum.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom36.jpg",
+    "name": "Amanita phalloides",
+    "scientific_name": "Amanita phalloides",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "8 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita phalloides.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom37.jpg",
+    "name": "Morchella esculenta",
+    "scientific_name": "Morchella esculenta",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "14 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Brown",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Morchella esculenta.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom39.jpg",
+    "name": "Galerina marginata",
+    "scientific_name": "Galerina marginata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "25 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Pink",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Galerina marginata.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom40.jpg",
+    "name": "Russula emetica",
+    "scientific_name": "Russula emetica",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "25 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Red",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Russula emetica.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom41.jpg",
+    "name": "Lactarius deliciosus",
+    "scientific_name": "Lactarius deliciosus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "29 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Red",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Lactarius deliciosus.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom42.jpg",
+    "name": "Pleurotus ostreatus",
+    "scientific_name": "Pleurotus ostreatus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "18 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Pleurotus ostreatus.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom43.jpg",
+    "name": "Agaricus bisporus",
+    "scientific_name": "Agaricus bisporus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "24 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Black",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Agaricus bisporus.",
+    "region": "Australia"
+  },
+  {
+    "image": "/images/mushroom44.jpg",
+    "name": "Morchella esculenta",
+    "scientific_name": "Morchella esculenta",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "26 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Morchella esculenta.",
+    "region": "Europe"
+  },
+  {
+    "image": "/images/mushroom45.jpg",
+    "name": "Entoloma sinuatum",
+    "scientific_name": "Entoloma sinuatum",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "10 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Pink",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Entoloma sinuatum.",
+    "region": "Asia"
+  },
+  {
+    "image": "/images/mushroom46.jpg",
+    "name": "Hypholoma fasciculare",
+    "scientific_name": "Hypholoma fasciculare",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "22 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Pink",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Hypholoma fasciculare.",
+    "region": "Asia"
+  },
+  {
+    "image": "/images/mushroom48.jpg",
+    "name": "Clitocybe dealbata",
+    "scientific_name": "Clitocybe dealbata",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "19 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Clitocybe dealbata.",
+    "region": "South America"
+  },
+  {
+    "image": "/images/mushroom49.jpg",
+    "name": "Amanita phalloides",
+    "scientific_name": "Amanita phalloides",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "28 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Gray",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Amanita phalloides.",
+    "region": "North America"
+  },
+  {
+    "image": "/images/mushroom50.jpg",
+    "name": "Agaricus bisporus",
+    "scientific_name": "Agaricus bisporus",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "8 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Pink",
+        "is_filterable": true
+      }
+    },
+    "description": "A description of the Agaricus bisporus.",
+    "region": "South America"
+  }
+]

@@ -6,21 +6,25 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: #579076;
     padding: 10px 0;
     z-index: 100;
+		box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+		border-radius: 15px 15px 0 0;
   }
   
   .navItem {
-    font-size: 24px;
+    font-size: calc(2vw + 1rem);
     cursor: pointer;
     flex: 1;
     text-align: center;
+		color: #ffff;
   }
   
   .navItem:hover {
-    background-color: #f0f0f0;
+    background-color: #B6EEA6;
     border-radius: 10px;
     transition: background-color 0.3s ease;
   }
   
+
