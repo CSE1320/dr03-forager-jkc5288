@@ -1,95 +1,124 @@
 'use client';
-import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import NavBar from '../../components/NavBar';
-import PolaroidCard from '../../components/PolaroidCard';
-import WarningBanner from '../../components/WarningBanner';
-import ToxicAlertOverlay from '../../components/ToxicAlertOverlay';
+import FavoriteButton from '@/components/FavoriteButton';
+import ToxicBadge from '@/components/ToxicBadge';
+import Message from '@/components/Message';
+import WarningBanner from '@/components/WarningBanner';
+import SimilarMatchList from '@/components/SimilarMatchList';  // Import the new component
+import '@/styles/mushroompage.css';
 
-export default function MushroomPage() {
+const MushroomPage = () => {
 	const searchParams = useSearchParams();
-	const [mushroom, setMushroom] = useState(null);
-	const [error, setError] = useState(null);
-	const [showAlert, setShowAlert] = useState(false);
-	const placeholderImage = '/images/placeholder.png';
+	const router = useRouter();
+	const [isFavorite, setIsFavorite] = useState(false);
+	const [loading, setLoading] = useState(true);
+	const [showToxicAlert, setShowToxicAlert] = useState(false);
+	const [similarMushrooms, setSimilarMushrooms] = useState([]); // State to hold similar mushrooms
+	const [searchQuery, setSearchQuery] = useState('');
+	const [selectedFilters, setSelectedFilters] = useState([]);
+
+	const mushroom = {
+		id: searchParams.get('id'),
+		name: searchParams.get('name'),
+		scientific_name: searchParams.get('scientific_name'),
+		image: searchParams.get('image') || '/images/placeholder.jpg',
+		is_toxic: searchParams.get('is_toxic') === 'true',
+		description: searchParams.get('description') || 'No description available.',
+	};
+
+	if (!mushroom.id) {
+		console.error('Missing mushroomId');
+		return;
+	}
 
 	useEffect(() => {
-		const fetchMushrooms = async () => {
+		const fetchFavoriteStatus = async () => {
 			try {
-				const response = await fetch('/mushroom.json');
-				const data = await response.json();
-				const mushroomName = searchParams.get('name');
-
-				const foundMushroom = data.find((m) => m.name === mushroomName);
-				if (foundMushroom) {
-					setMushroom(foundMushroom);
-					if (foundMushroom.features?.is_toxic && !localStorage.getItem('toxicWarningAcknowledged')) {
-						setShowAlert(true);
-					}
-				} else {
-					setError('Mushroom not found.');
-				}
-			} catch (err) {
-				setError('Failed to load mushroom data.');
+				const isFavoriteFromParams = searchParams.get('is_favorite') === 'true';
+				setIsFavorite(isFavoriteFromParams);
+			} catch (error) {
+				console.error('Failed to fetch favorite status:', error);
+			} finally {
+				setLoading(false);
 			}
 		};
 
-		if (searchParams.get('name')) {
-			fetchMushrooms();
+		if (mushroom.id) {
+			fetchFavoriteStatus();
 		}
-	}, [searchParams]);
+	}, [mushroom.id]);
 
-	const handleCloseAlert = () => {
-		localStorage.setItem('toxicWarningAcknowledged', 'true');
-		setShowAlert(false);
+	const handleFavoriteToggle = (mushroomId, newFavoriteStatus) => {
+		if (mushroomId === mushroom.id) {
+			setIsFavorite(newFavoriteStatus);
+		}
 	};
 
-	if (error) {
-		return <div className="p-6 text-red-600">{error}</div>;
-	}
-
-	if (!mushroom) {
-		return <div className="p-6">Loading...</div>;
-	}
+	useEffect(() => {
+		if (mushroom.is_toxic) {
+			setShowToxicAlert(true);
+		}
+	}, [mushroom.is_toxic]);
 
 	return (
-		<div className="page">
-			{/* Toxic alert overlay */}
-			{showAlert && <ToxicAlertOverlay onClose={handleCloseAlert} />}
-
-			{/* Green header with back button */}
-			<header className="bg-[#579076] text-white p-4 rounded-b-lg flex items-center">
-				<Link href="/dashboard" className="text-white text-lg font-medium">← Back</Link>
+		<div className="mushroom-page">
+			<header className="mushroom-header">
+				<button onClick={() => router.back()} className="back-button">
+					<Link href="/">❮</Link>
+				</button>
 			</header>
 
-			{/* Warning banner */}
-			<div className="p-4">
-				<WarningBanner isToxic={mushroom.features?.is_toxic} />
-			</div>
+			<main className="mushroom-content">
+				{mushroom.is_toxic && <WarningBanner isToxic={mushroom.is_toxic} />}
 
-			{/* Polaroid card section with Compare button */}
-			<section className="bg-white p-4 shadow-md rounded-lg m-4 relative">
-				<Link href="/comparison">
-					<button className="absolute top-4 right-4 bg-[#579076] text-white py-1 px-3 rounded-lg text-sm">
-						Compare
-					</button>
-				</Link>
-				<div className="flex justify-center py-6">
-					<PolaroidCard mushroom={mushroom} />
+				<div className="relative">
+					<div className="compare-container">
+						<Link
+							href={`/compare?currentMushroomId=${mushroom.id}&currentMushroomName=${mushroom.name}`}
+							className="compare-button"
+						>
+							Compare
+						</Link>
+					</div>
+
+					<div className="polaroid-card">
+						{mushroom.is_toxic && <ToxicBadge isToxic={mushroom.is_toxic} />}
+						<img src={mushroom.image} alt={mushroom.name} className="mushroom-image" />
+					</div>
 				</div>
-			</section>
 
-			{/* More information section */}
-			<section className="more-info-section bg-white p-4 shadow-md rounded-lg m-4">
-				<h3 className="text-2xl font-semibold mb-2">More Information</h3>
-				<p><strong>Toxic:</strong> {mushroom.features?.is_toxic ? 'Yes' : 'No'}</p>
-				<p><strong>Favorite:</strong> {mushroom.features?.is_favorite ? 'Yes' : 'No'}</p>
-				<p><strong>Region:</strong> {mushroom.region || 'Unknown'}</p>
-				<p><strong>Description:</strong> {mushroom.description || 'No description available.'}</p>
-			</section>
+				<div className="mushroom-details">
+					<div className="mushroom-text">
+						<h1 className="mushroom-name">{mushroom.name}</h1>
+						<p className="mushroom-scientific-name">{mushroom.scientific_name}</p>
+					</div>
 
-			<NavBar />
+					{!loading && (
+						<FavoriteButton
+							mushroomId={mushroom.id}
+							initialFavorite={isFavorite}
+							onFavoriteToggle={handleFavoriteToggle}
+						/>
+					)}
+				</div>
+
+				<div className="mushroom-description-container">
+					<h2 className="description-title">Description</h2>
+					<p className="mushroom-description">{mushroom.description}</p>
+				</div>
+
+				{/* Render Similar Match List */}
+				<SimilarMatchList
+					searchQuery={searchQuery}
+					selectedFilters={selectedFilters}
+				/>
+			</main>
+			{showToxicAlert && <Message onClose={() => setShowToxicAlert(false)} />}
 		</div>
 	);
-}
+};
+
+export default MushroomPage;
+

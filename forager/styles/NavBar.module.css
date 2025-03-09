@@ -1,30 +1,34 @@
 /* NavBar.module.css */
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #579076;
-    padding: 10px 0;
-    z-index: 100;
-		box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-		border-radius: 15px 15px 0 0;
-  }
-  
-  .navItem {
-    font-size: calc(2vw + 1rem);
-    cursor: pointer;
-    flex: 1;
-    text-align: center;
-		color: #ffff;
-  }
-  
-  .navItem:hover {
-    background-color: #B6EEA6;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
+	.navbar {
+		display: flex;
+		justify-content: space-around;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #579076;
+		padding: 1em 0; 
+		z-index: 100;
+		box-shadow: 0 -0.125em 0.3125em rgba(0, 0, 0, 0.1); 
+		border-radius: 0.9375em 0.9375em 0 0; 
+	}
+
+	.navItem {
+		font-size: calc(2vw + 1em);
+		cursor: pointer;
+		flex: 1;
+		text-align: center;
+		color: #fff;
+	}
+
+	.navItem:hover {
+		background-color: #B6EEA6;
+		border-radius: 0.625em; 
+		transition: background-color 0.3s ease;
+	}
+
+	.active {
+		color: #B6EEA6;
+		transform: scale(1.2);
+	}
 

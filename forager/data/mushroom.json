@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "image": "/images/destroying_angel.jpg",
+    "name": "Destroying Angel",
+    "scientific_name": "Amanita virosa",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "10 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "White",
+        "is_filterable": true
+      },
+      "cap_shape": {
+        "value": "Convex",
+        "is_filterable": true
+      },
+      "cap_texture": {
+        "value": "Smooth",
+        "is_filterable": true
+      },
+      "spore_print": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A deadly white mushroom found in woodlands. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "region": "North America, Europe"
+  },
+  {
+    "id": 2,
+    "image": "/images/paddy_straw.jpg",
+    "name": "Paddy Straw",
+    "scientific_name": "Volvariella volvacea",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "8 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Gray",
+        "is_filterable": true
+      },
+      "cap_shape": {
+        "value": "Bell-shaped",
+        "is_filterable": true
+      },
+      "cap_texture": {
+        "value": "Smooth",
+        "is_filterable": true
+      },
+      "spore_print": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "An edible mushroom commonly found in rice paddies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "region": "Asia"
+  },
+  {
+    "id": 3,
+    "image": "/images/false_death_cap.jpg",
+    "name": "False Death Cap",
+    "scientific_name": "Amanita citrina",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "12 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Yellow",
+        "is_filterable": true
+      },
+      "cap_shape": {
+        "value": "Convex",
+        "is_filterable": true
+      },
+      "cap_texture": {
+        "value": "Smooth",
+        "is_filterable": true
+      },
+      "spore_print": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "A toxic lookalike of the death cap. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "region": "Europe"
+  },
+  {
+    "id": 4,
+    "image": "/images/puffball.jpg",
+    "name": "Puffball",
+    "scientific_name": "Lycoperdon perlatum",
+    "features": {
+      "is_toxic": false,
+      "is_favorite": true
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "15 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "None",
+        "is_filterable": true
+      },
+      "cap_shape": {
+        "value": "Round",
+        "is_filterable": true
+      },
+      "cap_texture": {
+        "value": "Spiny",
+        "is_filterable": true
+      },
+      "spore_print": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "An edible mushroom that releases spores when mature. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "region": "Worldwide"
+  },
+  {
+    "id": 5,
+    "image": "/images/death_cap.jpg",
+    "name": "Death Cap",
+    "scientific_name": "Amanita phalloides",
+    "features": {
+      "is_toxic": true,
+      "is_favorite": false
+    },
+    "characteristics": {
+      "diameter": {
+        "value": "14 cm",
+        "is_filterable": true
+      },
+      "gill_color": {
+        "value": "Greenish",
+        "is_filterable": true
+      },
+      "cap_shape": {
+        "value": "Conical",
+        "is_filterable": true
+      },
+      "cap_texture": {
+        "value": "Smooth",
+        "is_filterable": true
+      },
+      "spore_print": {
+        "value": "White",
+        "is_filterable": true
+      }
+    },
+    "description": "One of the most poisonous mushrooms in the world. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "region": "Europe, North America"
+  }
+]

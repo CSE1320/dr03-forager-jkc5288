@@ -1,0 +1,125 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start; 
+  align-items: center;
+  background-color: gray;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+}
+
+/* Header and back button */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.backButton {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.backButtonLink {
+  color: white;
+  text-decoration: none;
+}
+
+.backButtonLink:hover {
+  color: #579076;
+}
+
+/* Camera container */
+.cameraContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  gap: 20px;
+}
+
+/* Focus overlay - appears when camera is active */
+.focusOverlay {
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);  
+  width: 150px; 
+  height: 150px; 
+  border: 2px solid rgba(255, 255, 255, 0.8);  /* White border with opacity */
+  pointer-events: none;  
+  display: none; 
+}
+
+.focusOverlay.active {
+  display: block;
+}
+
+/* Camera button container */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  flex-direction: row-reverse; /* Make photoLibraryButton appear on the left side */
+}
+
+/* Photo Library Button */
+.photoLibraryButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 50px; /* Size of the button */
+  height: 50px; /* Size of the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cameraButtonIcon {
+  width: 30px; /* Adjust size of the icon */
+  height: 30px; /* Adjust size of the icon */
+  object-fit: contain;
+}
+
+/* Camera buttons (Open Camera, Take Photo, etc.) */
+.openCameraButton,
+.resetPhotoButton {
+  background-color: #579076;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.openCameraButton:hover,
+.resetPhotoButton:hover {
+  background-color: #4a7049;
+}
+
+/* Photo preview */
+.photoPreview {
+  margin-top: 1rem;
+}
+
+.photo {
+  border-radius: 0.5rem;
+  max-width: 100%; /* Ensures image fits within its container */
+}
+
+/* Reset photo button */
+.resetPhotoButton {
+  margin-top: 0.5rem;
+  background-color: #f56565;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+

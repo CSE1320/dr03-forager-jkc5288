@@ -10,8 +10,8 @@ export default function NavBar() {
 
 	return (
 		<div className={styles.navbar}>
-			<Link href="/mushroom" passHref>
-				<div className={`${styles.navItem} ${pathname === '/mushroom' ? styles.active : ''}`}>
+			<Link href="/compare" passHref>
+				<div className={`${styles.navItem} ${pathname === '/compare' ? styles.active : ''}`}>
 					<TbMushroom />
 				</div>
 			</Link>

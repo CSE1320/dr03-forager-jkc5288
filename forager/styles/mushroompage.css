@@ -1,0 +1,126 @@
+.mushroom-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: white;
+  min-height: 100vh;
+}
+/*Header*/
+.mushroom-header {
+  width: 100%;
+  background-color: #579076; /* Green background */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mushroom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+	color: black;
+}
+
+/* Compare button without background */
+.compare-button {
+  position: absolute;
+  top: -0.5rem; /* Adjust to move above the Polaroid card */
+  right: 0;
+  color: gray;
+  font-size: 1rem;
+  font-weight: italic;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.compare-button:hover {
+  text-decoration: underline;
+}
+
+/* Container for positioning */
+.compare-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem; /* Space between button and polaroid card */
+}
+
+.polaroid-card {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 300px;
+}
+
+.mushroom-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.mushroom-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.mushroom-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.mushroom-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mushroom-scientific-name {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.favorite-button {
+	background-color: #579076;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.favorite-button.favorite-active {
+	background-color: #ff6b6b;
+	color: white;
+}
+
+.favorite-button:hover {
+	background-color: #ddd;
+}
+
+.mushroom-description {
+	font-size: 1rem;
+	color: #333;
+	line-height: 1.6;
+}
+

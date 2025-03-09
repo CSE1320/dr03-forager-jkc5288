@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Comparison Page Styles */
+.comparison-page {
+  padding: 0;
+}
+
+.comparison-header {
+  background-color: #579076;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.comparison-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.comparison-header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.comparison-header input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.comparison-header .text-gray-500 {
+  color: #999;
+}
+
+/* Mushroom Selection Styles */
+.mushroom-selection {
+  margin: 30px 20px;
+  color: black;
+}
+
+.mushroom-selection h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.mushroom-selection .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mushroom-selection .mushroom-list {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mushroom-selection .mushroom-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mushroom-selection .mushroom-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mushroom-selection .mushroom-list button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.mushroom-selection .mushroom-list button:hover {
+  background-color: #45a049;
+}
+
+/* Comparison Table Styles */
+.comparison-table {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: #F4F4F4;
+  color: black;
+}
+
+.comparison-table td {
+  background-color: #f9f9f9;
+  font-size: 1.2rem;
+}
+
+.comparison-table img {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+/* Back Link Styles */
+.back-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-link a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #579076;
+}
+
+.back-link a:hover {
+  color: #4caf50;
+}
+
